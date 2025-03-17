@@ -1,6 +1,7 @@
 import "./App.css";
 import React from "react";
 import EmpDetail from "./component/EmpDetail";
+import Counter from "./component/Counter";
 
 const employees = [
   {
@@ -50,7 +51,8 @@ const employees = [
 function App() {
   return (
     <>
-      <EmpDetail employData={employees} />
+      {/* <EmpDetail employData={employees} /> */}
+      <Counter />
     </>
   );
 }
