@@ -2,6 +2,7 @@ import "./App.css";
 import React from "react";
 import EmpDetail from "./component/EmpDetail";
 import Counter from "./component/Counter";
+import Comment from "./component/Comment";
 
 const employees = [
   {
@@ -49,12 +50,7 @@ const employees = [
 // console.log(employees);
 
 function App() {
-  return (
-    <>
-      {/* <EmpDetail employData={employees} /> */}
-      <Counter />
-    </>
-  );
+  return <Comment />;
 }
 
 export default App;
