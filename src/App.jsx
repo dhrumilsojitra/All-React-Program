@@ -3,6 +3,7 @@ import React from "react";
 import EmpDetail from "./component/EmpDetail";
 import Counter from "./component/Counter";
 import Comment from "./component/Comment";
+import UserForm from "./component/UserForm";
 
 const employees = [
   {
@@ -50,7 +51,12 @@ const employees = [
 // console.log(employees);
 
 function App() {
-  return <Comment />;
+  return (
+    <>
+      {/* <Comment />; */}
+      <UserForm />
+    </>
+  );
 }
 
 export default App;
