@@ -5,6 +5,8 @@ import Counter from "./component/Counter";
 import Comment from "./component/Comment";
 import UserForm from "./component/UserForm";
 import LocalForm from "./component/LocalForm";
+import DetailPage from "./component/DetailPage";
+import { BrowserRouter, Route, Router, Routes } from "react-router-dom";
 
 const employees = [
   {
@@ -55,7 +57,12 @@ function App() {
   return (
     <>
       {/* <Comment />; */}
-      <LocalForm />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<LocalForm />} />
+          <Route path="/data" element={<DetailPage />} />
+        </Routes>
+      </BrowserRouter>
     </>
   );
 }
