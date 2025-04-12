@@ -4,6 +4,7 @@ import EmpDetail from "./component/EmpDetail";
 import Counter from "./component/Counter";
 import Comment from "./component/Comment";
 import UserForm from "./component/UserForm";
+import LocalForm from "./component/LocalForm";
 
 const employees = [
   {
@@ -54,7 +55,7 @@ function App() {
   return (
     <>
       {/* <Comment />; */}
-      <UserForm />
+      <LocalForm />
     </>
   );
 }
