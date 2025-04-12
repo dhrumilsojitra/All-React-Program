@@ -49,7 +49,7 @@ export default function LocalForm() {
 
   return (
     <div className="min-h-screen bg-gray-100 flex flex-col items-center p-4">
-      <h1 className="text-3xl font-bold mb-4">Tailwind + React CRUD</h1>
+      <h1 className="text-3xl font-bold mb-4">React CRUD</h1>
 
       <form
         onSubmit={handleSubmit}
