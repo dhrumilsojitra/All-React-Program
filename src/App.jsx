@@ -7,6 +7,7 @@ import UserForm from "./component/UserForm";
 import LocalForm from "./component/LocalForm";
 import DetailPage from "./component/DetailPage";
 import { BrowserRouter, Route, Router, Routes } from "react-router-dom";
+import DataTable from "./component/DataTable";
 
 const employees = [
   {
@@ -59,8 +60,8 @@ function App() {
       {/* <Comment />; */}
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<LocalForm />} />
-          <Route path="/data" element={<DetailPage />} />
+          <Route path="/" element={<DataTable />} />
+          {/* <Route path="/data" element={<DetailPage />} /> */}
         </Routes>
       </BrowserRouter>
     </>
